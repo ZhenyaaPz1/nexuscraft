@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCraft — Premium Minecraft Ecosystem</title>
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <!-- ЗАЩИТНЫЙ СТИЛЬ ОТ ЧЕРНОГО ЭКРАНА -->
+    <style>
+        body, .home-wrapper, .catalog-section, #builds-page-screen, #home-screen {
+            opacity: 1 !important;
+            transform: none !important;
+            display: block !important;
+        }
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- ШАПКА САЙТА (НАВИГАЦИЯ) -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo" id="nav-logo">Nexus<span>Craft</span></a>
+            <nav class="nav-links">
+                <a href="index.html" id="link-home" class="active" data-translate="nav_home">Главная</a>
+                <a href="workshop.html" id="link-mods" data-translate="nav_workshop">Мастерская</a>
+                <a href="forum.html" id="link-forum" data-translate="nav_forum">Форум</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГЛАВНАЯ СТРАНИЦА (ОБЕРТКА) -->
+    <section class="home-wrapper screen-fade-in" id="home-screen">
+        <!-- ВЕРХНИЙ БЛОК ПРИВЕТСТВИЯ -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="main-title">
+                    <span class="letter">N</span>
+                    <span class="letter">E</span>
+                    <span class="letter">X</span>
+                    <span class="letter">U</span>
+                    <span class="letter">S</span>
+                    <span class="letter accent-letter">C</span>
+                    <span class="letter accent-letter">R</span>
+                    <span class="letter accent-letter">A</span>
+                    <span class="letter accent-letter">F</span>
+                    <span class="letter accent-letter">T</span>
+                </div>
+                <div class="sub-title" data-translate="hero_subtitle">PREMIUM MODIFICATIONS & VISUALS</div>
+                <div class="hero-buttons">
+                    <button class="nav-trigger-btn" id="to-products-btn" data-translate="btn_to_products">Перейти к продуктам</button>
+                    <a href="builds.html" class="nav-trigger-btn" id="to-builds-btn" data-translate="btn_to_builds" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">К готовым сборкам</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- РАЗДЕЛ С 4 ЯЧЕЙКАМИ (ПРОДУКТЫ) -->
+        <div class="products-section" id="products-zone">
+            <div class="category-grid">
+                <a href="workshop.html?cat=utility" class="category-card card-red" style="text-decoration: none; display: block;">
+                    <div class="cat-title" data-translate="cat_utility_title">Полезные моды</div>
+                    <div class="cat-subtitle" data-translate="cat_utility_sub">модификации</div>
+                    <div class="cat-divider"></div>
+                    <div class="cat-status" data-translate="cat_open">Открыть</div>
+                </a>
+                <a href="workshop.html?cat=visuals" class="category-card card-purple" style="text-decoration: none; display: block;">
+                    <div class="cat-title" data-translate="cat_visuals_title">Визуал моды</div>
+                    <div class="cat-subtitle" data-translate="cat_visuals_sub">интерфейс и рендер</div>
+                    <div class="cat-divider"></div>
+                    <div class="cat-status" data-translate="cat_open">Открыть</div>
+                </a>
+                <a href="workshop.html?cat=cheats" class="category-card card-blue" style="text-decoration: none; display: block;">
+                    <div class="cat-title" data-translate="cat_cheats_title">Чит моды</div>
+                    <div class="cat-subtitle" data-translate="cat_cheats_sub">софт функционал</div>
+                    <div class="cat-divider"></div>
+                    <div class="cat-status" data-translate="cat_open">Открыть</div>
+                </a>
+                <a href="workshop.html?cat=tools" class="category-card card-green" style="text-decoration: none; display: block;">
+                    <div class="cat-title" data-translate="cat_tools_title">Утилиты</div>
+                    <div class="cat-subtitle" data-translate="cat_tools_sub">скрипты и бинды</div>
+                    <div class="cat-divider"></div>
+                    <div class="cat-status" data-translate="cat_open">Открыть</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- БЛОК: ШИРОКАЯ КНОПКА СБОРОК -->
+        <div class="builds-section" id="builds-zone">
+            <a href="builds.html" class="wide-build-button" style="text-decoration: none; display: flex;">
+                <div class="wide-btn-content" style="text-align: left;">
+                    <h3 class="wide-btn-title" data-translate="wide_builds_title">Перейти к готовым сборкам</h3>
+                    <p class="wide-btn-desc" data-translate="wide_builds_desc">Готовые комплекты модификаций под любые задачи в один клик</p>
+                </div>
+                <div class="wide-btn-action">
+                    <span data-translate="wide_builds_action">ОТКРЫТЬ</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- МЯГКИЙ ПЕРЕХОД К ФУТЕРУ -->
+    <div class="footer-blur-transition"></div>
+    
+    <!-- ФУТЕР (ПОДВАЛ САЙТА) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">Nexus<span>Craft</span></a>
+                <div class="footer-controls">
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <div class="lang-current" id="lang-current">
+                            <span>RU</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="lang-list">
+                            <div class="lang-item active" data-lang="RU">Русский</div>
+                            <div class="lang-item" data-lang="EN">English</div>
+                        </div>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" class="social-btn"><img src="tg.png" alt="TG"></a>
+                        <a href="#" class="social-btn"><img src="ds.png" alt="DS"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4 data-translate="footer_products">Продукты</h4>
+                    <ul>
+                        <li><a href="#">Visual HUD pack</a></li>
+                        <li><a href="#">Utility Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="footer_nav">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html" id="footer-link-home" data-translate="nav_home">Главная</a></li>
+                        <li><a href="workshop.html" id="footer-link-mods" data-translate="nav_workshop">Мастерская</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="footer_copyright">&copy; 2026 NexusCraft. Все права защищены. Мы не связаны с Mojang Studios.</p>
+        </div>
+    </footer>
+    
+    <!-- Подключение вашего скрипта 1.js -->
+    <script src="1.js"></script>
+</body>
+</html>

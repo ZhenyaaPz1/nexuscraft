@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастерская — NexusCraft</title>
+    <link class="style-link" rel="stylesheet" href="style.css">
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <!-- ЗАЩИТНЫЙ СТИЛЬ ОТ ЧЕРНОГО ЭКРАНА -->
+    <style>
+        body, .home-wrapper, .catalog-section, #builds-page-screen, #catalog-screen {
+            opacity: 1 !important;
+            transform: none !important;
+            display: block !important;
+        }
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- ШАПКА САЙТА (НАВИГАЦИЯ) -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo" id="nav-logo">Nexus<span>Craft</span></a>
+            <nav class="nav-links">
+                <a href="index.html" id="link-home" data-translate="nav_home">Главная</a>
+                <a href="workshop.html" id="link-mods" class="active" data-translate="nav_workshop">Мастерская</a>
+                <a href="forum.html" id="link-forum" data-translate="nav_forum">Форум</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- СТРАНИЦА МАСТЕРСКОЙ (КАТАЛОГ МОДОВ) -->
+    <main class="catalog-section" id="catalog-screen">
+        <div class="mod-layout">
+            <!-- ДЭШБОРД С ЧИСТЫМ FABRIC API -->
+            <div class="mod-sidebar">
+                <div class="sidebar-title">DASHBOARD</div>
+                <button class="sidebar-btn active" data-category="optimization" data-translate="cat_optimization_title">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Оптимизация</span>
+                </button>
+                <button class="sidebar-btn" data-category="utility" data-translate="cat_utility_title">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Полезные моды</span>
+                </button>
+                <button class="sidebar-btn" data-category="fabric_api" data-translate="cat_fabric_title">
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>Fabric API</span>
+                </button>
+                <button class="sidebar-btn" data-category="visuals" data-translate="cat_visuals_title">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>Визуал моды</span>
+                </button>
+                <button class="sidebar-btn" data-category="cheats" data-translate="cat_cheats_title">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Чит моды</span>
+                </button>
+                <button class="sidebar-btn" data-category="cheat_clients" data-translate="cat_clients_title">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Чит клиенты</span>
+                </button>
+                <button class="sidebar-btn" data-category="tools" data-translate="cat_tools_title">
+                    <i class="fa-solid fa-wrench"></i>
+                    <span>Утилиты</span>
+                </button>
+            </div>
+            <div class="mod-content">
+                <div class="mod-list" id="mod-list-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- МЯГКИЙ ПЕРЕХОД К ФУТЕРУ -->
+    <div class="footer-blur-transition"></div>
+    
+    <!-- ФУТЕР (ПОДВАЛ САЙТА) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">Nexus<span>Craft</span></a>
+                <div class="footer-controls">
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <div class="lang-current" id="lang-current"><span>RU</span><i class="fa-solid fa-chevron-down"></i></div>
+                        <div class="lang-list">
+                            <div class="lang-item active" data-lang="RU">Русский</div>
+                            <div class="lang-item" data-lang="EN">English</div>
+                        </div>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" class="social-btn"><img src="tg.png" alt="TG"></a>
+                        <a href="#" class="social-btn"><img src="ds.png" alt="DS"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4 data-translate="footer_products">Продукты</h4>
+                    <ul>
+                        <li><a href="#">Visual HUD pack</a></li>
+                        <li><a href="#">Utility Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="footer_nav">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav_home">Главная</a></li>
+                        <li><a href="workshop.html" data-translate="nav_workshop">Мастерская</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="footer_copyright">&copy; 2026 NexusCraft. Все права защищены. Мы не связаны с Mojang Studios.</p>
+        </div>
+    </footer>
+    <script src="1.js"></script>
+</body>
+</html>
